@@ -2,7 +2,7 @@
 一个可自定义UI风格的对话框，用法和原生的AlertDialog类似。
 ## 效果图
 下面是一个仿ios风格的对话框效果图：
->![ios风格的效果图](https://github.com/lynnchurch/AlertDialog/blob/master/screenshot/screenshot.jpg)
+![ios风格的效果图](https://github.com/lynnchurch/AlertDialog/blob/master/screenshot/screenshot.jpg)
 ## 使用
 ### 用法如下所示：
 
