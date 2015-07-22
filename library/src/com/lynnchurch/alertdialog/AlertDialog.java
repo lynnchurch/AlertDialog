@@ -134,7 +134,7 @@ public class AlertDialog extends Dialog
 				layout = contentView;
 			} else
 			{
-				layout = inflater.inflate(R.layout.layout_dialog, null);
+				layout = inflater.inflate(R.layout.layout_alert_dialog, null);
 			}
 			// 设置标题
 			TextView titleView = (TextView) layout.findViewById(R.id.title);
