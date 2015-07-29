@@ -202,6 +202,30 @@ public class AlertDialog extends Dialog
 					}
 				});
 			}
+
+			if (null != positiveButtonText && null == negativeButtonText)
+			{
+				positiveButton
+						.setBackgroundResource(R.drawable.selector_single_btn);
+				if (null == positiveButtonClickListener)
+				{
+					positiveButton.setVisibility(View.VISIBLE);
+
+					positiveButton.setText(positiveButtonText);
+					positiveButton
+							.setOnClickListener(new View.OnClickListener()
+							{
+
+								@Override
+								public void onClick(View v)
+								{
+									// TODO Auto-generated method stub
+									dialog.dismiss();
+								}
+							});
+				}
+			}
+
 			// 设置对话框的视图
 			LayoutParams params = new LayoutParams(550,
 					LayoutParams.WRAP_CONTENT);
