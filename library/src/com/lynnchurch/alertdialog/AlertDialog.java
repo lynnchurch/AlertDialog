@@ -227,7 +227,7 @@ public class AlertDialog extends Dialog
 			}
 
 			// 设置对话框的视图
-			LayoutParams params = new LayoutParams(550,
+			LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT,
 					LayoutParams.WRAP_CONTENT);
 			dialog.setContentView(layout, params);
 			return dialog;

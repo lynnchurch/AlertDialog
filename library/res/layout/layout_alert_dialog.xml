@@ -1,68 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/bg_content"
+        android:layout_centerInParent="true"
         android:orientation="vertical"
-        android:paddingBottom="20dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="20dp" >
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
 
-        <TextView
-            android:id="@+id/title"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="标题"
-            android:textColor="#000"
-            android:textSize="17dp" />
+            android:background="@drawable/bg_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
 
-        <TextView
-            android:id="@+id/message"
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="标题"
+                android:textColor="#000"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="消息内容"
+                android:textColor="@color/text_color_message"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="消息内容"
-            android:textColor="@color/text_color_message"
-            android:textSize="14dp" />
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_left_btn"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="确认"
+                android:textColor="@color/text_color_btn"
+                android:textSize="17dp"/>
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_right_btn"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="取消"
+                android:textColor="@color/text_color_btn"
+                android:textSize="17dp"/>
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:orientation="horizontal" >
-
-        <Button
-            android:id="@+id/positiveButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/selector_left_btn"
-            android:gravity="center"
-            android:padding="6dp"
-            android:text="确认"
-            android:textColor="@color/text_color_btn"
-            android:textSize="17dp" />
-
-        <Button
-            android:id="@+id/negativeButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="1dp"
-            android:layout_weight="1"
-            android:background="@drawable/selector_right_btn"
-            android:gravity="center"
-            android:padding="6dp"
-            android:text="取消"
-            android:textColor="@color/text_color_btn"
-            android:textSize="17dp" />
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
